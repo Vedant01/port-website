@@ -17,6 +17,12 @@ import { baseMeta } from '~/utils/meta';
 import { Form } from '@remix-run/react';
 import styles from './contact.module.css';
 
+export async function action({ request }) {
+  const formData = await request.formData();
+  // handle the form
+  return null;
+}
+
 export const meta = () => {
   return baseMeta({
     title: 'Contact',

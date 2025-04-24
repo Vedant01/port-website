@@ -1,9 +1,10 @@
 {
-  "buildCommand": "npx remix vite:build",
-  "devCommand": "npx remix vite:dev",
+  "buildCommand": "vite build",
+  "name": "portfolio-1",
+  "devCommand": "vite dev",
   "framework": "remix",
   "installCommand": "npm install",
-  "regions": ["bom1"],
+  "regions": ["iad1"],
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/server" }
   ],
